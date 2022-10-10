@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    
+
+    <div class="container">
+        <div class="row input-row">
+            <div class="col-md-12">
+                <div class="input-group in-middle">
+                    <input type="text" class="input-area" placeholder="Şehir Girin">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="location-info in-middle">
+                    <span class="city-name"> </span>
+                    <span class="line"> - </span>
+                    <span class="country-name">  </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="weather-info in-middle">
+                    <div class="weather-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="degree-part">
+                        <span class="weather-degree"></span><span>°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="weather-text in-middle"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="extra-info in-middle">
+                    <ul>
+                        <li class="in-middle info-title">Min-Max:<span class="min-max"></span></li>
+                        <li class="in-middle"><p class="info-title">Nem Oranı: %<span class="humidity"></span></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
